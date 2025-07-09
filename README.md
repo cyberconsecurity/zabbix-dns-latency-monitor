@@ -1,5 +1,5 @@
 # zabbix-dns-latency-monitor
-This lightweight monitoring utility checks internal and external DNS latency using kdig (from the Knot DNS suite) and integrates with Zabbix Agent for alerting and graphing.
+This lightweight monitoring utility checks internal and external DNS latency using kdig (from the Knot DNS suite) and integrates with Zabbix Agent for alerting and graphing. This currently checks against 5 external and 3 internal DNS servers.
 
 ***Tested on Zabbix version 7.2.10 running on Ubuntu 24.04***
 
