@@ -42,3 +42,6 @@ Zabbix Frontend Configuration
 2. Upload: Template_DNS_Latency_Monitor.xml
 3. Link the template to your Zabbix server host
 4. Go to Monitoring → Graphs → DNS Latency to view real-time results
+
+
+![Sample_Graph](https://github.com/user-attachments/assets/7e060eec-5f87-4bb3-a372-eac34bc62448)
