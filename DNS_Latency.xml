@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>7.2</version>
+    <template_groups>
+        <template_group>
+            <uuid>7df96b18c230490a9a0a9e2307226338</uuid>
+            <name>Templates</name>
+        </template_group>
+    </template_groups>
+    <templates>
+        <template>
+            <uuid>61503186824346b2ba79b288e7174d5d</uuid>
+            <template>DNS Latency Monitor</template>
+            <name>DNS Latency Monitor</name>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <uuid>e680e8a2805b41338463453854b5bde6</uuid>
+                    <name>DNS Latency External 1</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>dns.latency.external1</key>
+                    <units>ms</units>
+                </item>
+                <item>
+                    <uuid>dfc02f0887774392bc8215a9fb593f86</uuid>
+                    <name>DNS Latency External 2</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>dns.latency.external2</key>
+                    <units>ms</units>
+                </item>
+                <item>
+                    <uuid>6354dd9468b24239bf58449a07940eb4</uuid>
+                    <name>DNS Latency External 3</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>dns.latency.external3</key>
+                    <units>ms</units>
+                </item>
+                <item>
+                    <uuid>c14787b1972c4c289d32a68d0671cb54</uuid>
+                    <name>DNS Latency External 4</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>dns.latency.external4</key>
+                    <units>ms</units>
+                </item>
+                <item>
+                    <uuid>9b6cb26d70a74dac81f4eb711ca13149</uuid>
+                    <name>DNS Latency External 5</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>dns.latency.external5</key>
+                    <units>ms</units>
+                </item>
+                <item>
+                    <uuid>8bc28d8ecf4b4cd4aa3e9c5ab4386fb9</uuid>
+                    <name>DNS Latency Internal 1</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>dns.latency.internal1</key>
+                    <units>ms</units>
+                </item>
+                <item>
+                    <uuid>a04f0516f20445c58ffb9efd6958b0e8</uuid>
+                    <name>DNS Latency Internal 2</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>dns.latency.internal2</key>
+                    <units>ms</units>
+                </item>
+                <item>
+                    <uuid>f752c77b91bd465d957d62926b6cbe6f</uuid>
+                    <name>DNS Latency Internal 3</name>
+                    <type>ZABBIX_ACTIVE</type>
+                    <key>dns.latency.internal3</key>
+                    <units>ms</units>
+                </item>
+            </items>
+        </template>
+    </templates>
+    <graphs>
+        <graph>
+            <uuid>5175f66a840148d0b2fa861d08edac18</uuid>
+            <name>DNS Latency Overview</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <calc_fnc>MIN</calc_fnc>
+                    <item>
+                        <host>DNS Latency Monitor</host>
+                        <key>dns.latency.external1</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <calc_fnc>MIN</calc_fnc>
+                    <item>
+                        <host>DNS Latency Monitor</host>
+                        <key>dns.latency.external2</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <calc_fnc>MIN</calc_fnc>
+                    <item>
+                        <host>DNS Latency Monitor</host>
+                        <key>dns.latency.external3</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <calc_fnc>MIN</calc_fnc>
+                    <item>
+                        <host>DNS Latency Monitor</host>
+                        <key>dns.latency.external4</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <calc_fnc>MIN</calc_fnc>
+                    <item>
+                        <host>DNS Latency Monitor</host>
+                        <key>dns.latency.external5</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>6C59DC</color>
+                    <calc_fnc>MIN</calc_fnc>
+                    <item>
+                        <host>DNS Latency Monitor</host>
+                        <key>dns.latency.internal1</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <color>C7A72D</color>
+                    <calc_fnc>MIN</calc_fnc>
+                    <item>
+                        <host>DNS Latency Monitor</host>
+                        <key>dns.latency.internal2</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <color>BA2A5D</color>
+                    <calc_fnc>MIN</calc_fnc>
+                    <item>
+                        <host>DNS Latency Monitor</host>
+                        <key>dns.latency.internal3</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+</zabbix_export>

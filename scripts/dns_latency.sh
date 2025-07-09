@@ -9,10 +9,4 @@ if [[ -z "$dns_server" || -z "$domain" ]]; then
   exit 1
 fi
 
-kdig_output=$(kdig +noheader +stats @$dns_server $domain 2>/dev/null)
-if [[ $? -ne 0 ]]; then
-  echo 9999
-  exit 1
-fi
-
-echo "$kdig_output" | awk '/Query time:/ { print $3 }'
+dig @$dns_server $domain +stats +time=2 2>/dev/null | awk '/Query time:/ { print $4 }'
