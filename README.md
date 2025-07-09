@@ -1,6 +1,8 @@
 # zabbix-dns-latency-monitor
 This lightweight monitoring utility checks internal and external DNS latency using kdig (from the Knot DNS suite) and integrates with Zabbix Agent for alerting and graphing.
 
+***Tested on Zabbix version 7.2.10 running on Ubuntu 24.04***
+
 Prerequisites
 Install kdig if not already installed:
 1. sudo apt update
