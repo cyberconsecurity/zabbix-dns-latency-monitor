@@ -41,9 +41,26 @@ Step-by-Step Setup
 
 Zabbix Frontend Configuration
 1. Go to: Configuration → Templates → Import
-2. Upload: Template_DNS_Latency_Monitor.xml
+2. Upload: DNS_Latency.xml
 3. Link the template to your Zabbix server host
 4. Go to Monitoring → Graphs → DNS Latency to view real-time results
 
+To change the Zabbix dashboard to display meaningful labels (e.g., actual DNS server names like 8.8.8.8, 1.1.1.1) instead of keys like DNS Latency External 1.
+
+1. Go to Configuration → Templates
+2. Open Template DNS Latency Monitor
+3. Click the Items tab
+4. Find dns.latency.external1, click on it
+5. Change the Name from:
+
+   DNS Latency External 1
+
+   To something like DNS Latency to 8.8.8.8
+7. Click Update
+
+Repeat this for each item:
+   dns.latency.external2 → DNS Latency to 1.1.1.1
+   
+   etc.
 
 ![Sample_Graph](https://github.com/user-attachments/assets/7e060eec-5f87-4bb3-a372-eac34bc62448)
